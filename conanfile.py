@@ -37,7 +37,7 @@ class PBKDF2Recipe(ConanFile):
             self.options.rm_safe("fPIC")
 
     def requirements(self):
-        self.requires("openssl/[>=3 <4]")
+        self.requires("openssl/[>=3 <4]", options={"no_fips": True})
         self.requires("cli11/[>=2 <3]")
         self.requires("nlohmann_json/[>=3 <4]")
 

@@ -12,4 +12,8 @@ build_type=Release
 CC=x86_64-w64-mingw32-gcc
 CXX=x86_64-w64-mingw32-g++
 RC=x86_64-w64-mingw32-windres
+RANLIB=x86_64-w64-mingw32-ranlib
 LDFLAGS=-static-libgcc -static-libstdc++
+
+[conf]
+tools.build:jobs=2
